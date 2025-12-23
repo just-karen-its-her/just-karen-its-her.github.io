@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KONTINGENSI - MATEMATIKA DISKRIT</title>
+
+    <link rel="stylesheet" href="/assets/style/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Molle&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yarndings+20&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <h2 class="logo">
+            <img src="/assets/img/LOGO POLMAN BABEL.png" alt="Logo Polman Babel">
+        </h2>
+        <ul class="nav">
+            <li><a href="/index.html">Beranda</a></li>
+            <li><a href="/assets/pages/materi.html"> Materi </a></li>
+            <li><a href="#"> Kalkulator </a></li>
+            <li><a href="#">Soal Evaluasi</a></li>
+        </ul>
+    </nav>
+    <div class="containeR">
+        <h1>KONTINGENSI</h1>
+
+        <div class="materiA">
+            <ul>
+                <li><a href="/assets/pages/folder/computer.html">Implikasi dan aplikasinya dalam bidang komputer</a>
+                </li>
+                <li><a href="/assets/pages/folder/sub-proposisi.html">Proposisi majemuk</a></li>
+                <li><a href="/assets/pages/folder/toutologi.html">Tautologi</a></li>
+                <li><a href="/assets/pages/folder/kontradiksi.html">Kontradiksi</a></li>
+                <li><a href="/assets/pages/folder/kontingensi.html" class="active">Kontingensi</a></li>
+            </ul>
+        </div>
+
+        <div class="paragraf5">
+            <h4>Pengertian Kontingensi</h4>
+            <p>
+                <strong>Kontingensi</strong> adalah suatu pernyataan majemuk yang nilai kebenarannya **tidak selalu
+                Benar** (bukan Tautologi) dan **tidak selalu Salah** (bukan Kontradiksi).
+            </p>
+            <p>
+                Artinya, hasil akhirnya merupakan campuran antara nilai **Benar (T)** dan **Salah (F)**, bergantung pada
+                kombinasi nilai kebenaran dari variabel-variabel penyusunnya.
+            </p>
+            <p>
+                Contoh rumus Kontingensi: <strong>[Q &and; (P &rArr; Q)] &rArr; P</strong>
+            </p>
+
+            <h4>Tabel Kebenaran Kontingensi:</h4>
+            <table border="1" class="table5">
+                <thead>
+                    <tr>
+                        <th>P</th>
+                        <th>Q</th>
+                        <th>P &rArr; Q</th>
+                        <th>Q &and; (P &rArr; Q)</th>
+                        <th>Hasil Akhir:<br>[Q &and; (P &rArr; Q)] &rArr; P</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>T</td>
+                        <td>T</td>
+                        <td>T</td>
+                        <td>T</td>
+                        <td>T</td>
+                    </tr>
+                    <tr>
+                        <td>T</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>T</td>
+                    </tr>
+                    <tr>
+                        <td>F</td>
+                        <td>T</td>
+                        <td>T</td>
+                        <td>T</td>
+                        <td>F</td>
+                    </tr>
+                    <tr>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>T</td>
+                        <td>F</td>
+                        <td>T</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h4>Analisis Tabel:</h4>
+            <p>
+                Perhatikan kolom terakhir (Hasil Akhir). Nilai kebenarannya adalah campuran:
+            </p>
+            <ul>
+                <li>Baris 1, 2, dan 4 bernilai <strong>T (Benar)</strong>.</li>
+                <li>Baris 3 bernilai <strong>F (Salah)</strong>.</li>
+            </ul>
+            <p class="note">
+                Karena terdapat setidaknya satu nilai <strong>T</strong> dan satu nilai <strong>F</strong> dalam kolom
+                hasil akhir, maka pernyataan majemuk ini terbukti sebagai <strong>KONTINGENSI</strong>.
+            </p>
+        </div>
+    </div>
+    <footer class="site-footer">
+        <div class="footer-bottom">
+            <p>&copy; Kelompok Satu. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

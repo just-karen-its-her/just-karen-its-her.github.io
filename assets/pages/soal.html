@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soal, Video & Pembahasan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Molle&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yarndings+20&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="/assets/style/styles.css">
+
+</head>
+
+<body>
+
+    <div class="navbar">
+        <h2 class="logo"> <img src="/assets/img/LOGO POLMAN BABEL.png" alt="none"> </h2>
+        <ul class="nav">
+            <li><a href="/index.html">Beranda</a></li>
+            <li><a href="/assets/pages/materi.html"> Materi </a></li>
+            <li><a href="/assets/pages/calculator.html"> Kalkulator </a></li>
+            <li><a href="/assets/pages/soal.html">Soal Evaluasi</a></li>
+        </ul>
+    </div>
+
+    <section class="section-card">
+        <div class="card-header">
+            <h2>Video Pembelajaran & Kuis</h2>
+        </div>
+
+        <div class="card-body" style="flex-direction: column; align-items: center;">
+
+            <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/9N3FFVDcX_E" title="Video Pembelajaran Logika Informatika"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/lkIcaSgWPeo" title="Video Pembelajaran Logika"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <div class="quiz-container">
+                <h3>Kuis: Operator Logika & Tabel Kebenaran</h3>
+                <p style="text-align: center; margin-bottom: 20px; color: #bbb;">Jawablah soal-soal berikut untuk
+                    menguji pemahaman Logika Matematika Diskrit Anda.</p>
+
+                <form id="formSoal">
+
+                    <div class="soal-card" id="soal1" data-jawaban="A">
+                        <div class="soal-text">
+                            <p><b>1. Diketahui pernyataan proposisi berikut:</b></p>
+                            <p><b>p</b>: Hari ini adalah hari Minggu (Bernilai <b>Benar</b>)</p>
+                            <p><b>q</b>: Besok adalah hari Senin (Bernilai <b>Benar</b>)</p>
+                            <p>Tentukan nilai kebenaran dari konjungsi <b>p ∧ q</b> (p DAN q).</p>
+                        </div>
+
+                        <div class="pilihan-ganda">
+                            <label><input type="radio" name="q1" value="A"> Benar (True)</label>
+                            <label><input type="radio" name="q1" value="B"> Salah (False)</label>
+                            <label><input type="radio" name="q1" value="C"> Tidak dapat ditentukan</label>
+                        </div>
+
+                        <div class="feedback"></div>
+                        <div class="pembahasan hidden">
+                            <b>Pembahasan:</b><br>
+                            Dalam operator konjungsi (AND), pernyataan bernilai Benar jika dan hanya jika <b>kedua</b>
+                            proposisi penyusunnya bernilai Benar. Karena p Benar dan q Benar, maka p ∧ q adalah
+                            <b>Benar</b>.
+                        </div>
+                    </div>
+
+                    <div class="soal-card" id="soal2" data-jawaban="C">
+                        <div class="soal-text">
+                            <p><b>2. Perhatikan tabel kebenaran untuk implikasi (p → q). Pada kondisi manakah pernyataan
+                                    implikasi bernilai SALAH (False)?</b></p>
+                        </div>
+
+                        <div class="pilihan-ganda">
+                            <label><input type="radio" name="q2" value="A"> Saat p Benar dan q Benar</label>
+                            <label><input type="radio" name="q2" value="B"> Saat p Salah dan q Benar</label>
+                            <label><input type="radio" name="q2" value="C"> Saat p Benar dan q Salah</label>
+                        </div>
+
+                        <div class="feedback"></div>
+                        <div class="pembahasan hidden">
+                            <b>Pembahasan:</b><br>
+                            Implikasi (p → q) hanya bernilai <b>Salah</b> jika hipotesis (p) bernilai Benar, tetapi
+                            konklusi (q) bernilai Salah. Pada kondisi lain, implikasi dianggap Benar.
+                        </div>
+                    </div>
+
+                    <div class="soal-card" id="soal3" data-jawaban="B">
+                        <div class="soal-text">
+                            <p><b>3. Jika diketahui nilai p adalah BENAR (T) dan nilai q adalah SALAH (F), tentukan
+                                    hasil dari ekspresi logika berikut:</b></p>
+                            <p style="text-align: center; font-size: 1.2rem; margin: 10px 0;"><b>(p ∨ q) ∧ ¬q</b></p>
+                        </div>
+
+                        <div class="pilihan-ganda">
+                            <label><input type="radio" name="q3" value="A"> Salah (False)</label>
+                            <label><input type="radio" name="q3" value="B"> Benar (True)</label>
+                            <label><input type="radio" name="q3" value="C"> Kontradiksi</label>
+                        </div>
+
+                        <div class="feedback"></div>
+                        <div class="pembahasan hidden">
+                            <b>Pembahasan:</b><br>
+                            Mari kita bedah langkah demi langkah:<br>
+                            1. <b>(p ∨ q)</b>: T OR F = <b>True</b><br>
+                            2. <b>¬q</b> (Negasi q): NOT F = <b>True</b><br>
+                            3. Gabungkan dengan AND: (True) ∧ (True) = <b>True (Benar)</b>.
+                        </div>
+                    </div>
+
+                    <button type="button" class="btn-ctaa" onclick="cekJawaban()"
+                        style="width: 100%; margin-top: 20px;">Kirim Jawaban & Lihat Nilai</button>
+                </form>
+
+                <div id="hasil-nilai" style="display: none;">
+                    <h3>Nilai Anda: <span id="skor-akhir">0</span> / 100</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- === FOOTER === -->
+    <footer class="site-footer">
+        <div class="footer-bottom">
+            <p>&copy; Kelompok satu. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+    <script src="/assets/scripts/soal.js"></script>
+
+</body>
+
+</html>

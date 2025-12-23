@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CALCULAOTR PENAGANTAR LOGIKA</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="/assets/style/styles.css">
+</head>
+
+<body>
+
+    <body>
+        <div class="navbar">
+            <h2 class="logo">
+                <img src="/assets/img/LOGO POLMAN BABEL.png" alt="Logo Polman">
+            </h2>
+            <ul class="nav">
+                <li><a href="/index.html">Beranda</a></li>
+                <li><a href="/assets/pages/materi.html">Materi</a></li>
+                <li><a href="/assets/pages/calculator.html">Kalkulator</a></li>
+                <li><a href="/assets/pages/soal.html">Soal Evaluasi</a></li>
+            </ul>
+        </div>
+        <section class="calculator-section">
+            <form class="container-calculator" onsubmit="return false;">
+                <h1>Matematika Diskrit & Logika</h1>
+                <div class="subtitle">OPERATOR LOGIKA</div>
+
+                <div style="display: flex; gap: 15px;">
+                    <div style="flex:1">
+                        <label>Proposisi p</label>
+                        <input type="text" id="p" placeholder="Ketik apa saja: Nyala, Betul, 1..." autocomplete="off" />
+                    </div>
+                    <div style="flex:1">
+                        <label>Proposisi q</label>
+                        <input type="text" id="q" placeholder="Ketik apa saja: Padam, Salah, 0..." autocomplete="off" />
+                    </div>
+                </div>
+
+                <div class="hint-box">
+                    <b>💡 Kamus Input yang Dikenali:</b><br>
+                    <span class="hint-hl">BENAR:</span> 1, True, T, Benar, Betul, Ya, Yes, On, High, Hidup, Nyala,
+                    Aktif,
+                    5V, Ada, Bisa, Sip.<br>
+                    <span class="hint-hl">SALAH:</span> 0, False, F, Salah, Tidak, No, Off, Low, Mati, Padam, Nonaktif,
+                    GND,
+                    Kosong, Gak, Nggak.
+                </div>
+
+                <label>Operator & Sifat:</label>
+                <div class="btn-group">
+                    <button onclick="proses('KONJUNGSI', this)">
+                        <span class="symbol">∧</span> Konjungsi
+                    </button>
+                    <button onclick="proses('DISJUNGSI', this)">
+                        <span class="symbol">∨</span> Disjungsi
+                    </button>
+                    <button onclick="proses('IMPLIKASI', this)">
+                        <span class="symbol">→</span> Implikasi
+                    </button>
+                    <button onclick="proses('BIIMPLIKASI', this)">
+                        <span class="symbol">↔</span> Bi-implikasi
+                    </button>
+
+                    <button onclick="proses('TAUTOLOGI', this)" style="border-color: var(--true); color: var(--true);">
+                        <span class="symbol">p ∨ ¬p</span> Tautologi
+                    </button>
+                    <button onclick="proses('KONTRADIKSI', this)"
+                        style="border-color: var(--false); color: var(--false);">
+                        <span class="symbol">p ∧ ¬p</span> Kontradiksi
+                    </button>
+
+                    <button onclick="proses('NEGASI', this)">
+                        <span class="symbol">¬</span> Negasi p
+                    </button>
+                    <button onclick="proses('XOR', this)">
+                        <span class="symbol">⊕</span> XOR
+                    </button>
+
+                    <button onclick="resetForm()" class="reset">RESET</button>
+                </div>
+
+                <div class="result-panel">
+                    <div class="box">
+                        <div class="box-header">
+                            <span class="box-title">Tabel Kebenaran</span>
+                        </div>
+                        <div id="tableContainer">
+                            <div style="text-align: center; color: #555; font-style: italic; padding: 20px;">
+                                Menunggu input...
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="box-header">
+                            <span class="box-title">Notasi & Analisis</span>
+                        </div>
+
+                        <div id="statusContainer" style="text-align:center;"></div>
+
+                        <div id="mathDisplay" class="math-display">
+                            <span style="color:#555; font-size:1rem; font-family:'Poppins'">Hasil Notasi</span>
+                        </div>
+
+                        <div id="explanationContainer" class="explanation-content">
+                            <span style="color:#555; font-style:italic;">Analisis detail akan muncul di sini.</span>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+        <footer class="site-footer">
+            <div class="footer-bottom">
+                <p>&copy; Kelompok satu. All rights reserved.</p>
+            </div>
+        </footer>
+
+        <script src="/assets/scripts/java.js"></script>
+    </body>
+
+</html>

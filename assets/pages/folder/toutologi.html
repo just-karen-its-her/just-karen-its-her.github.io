@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> TAUTOLOGI </title>
+    <link rel="stylesheet" href="/assets/style/styles.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Molle&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yarndings+20&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- === NAVBAR === -->
+    <div class="navbar">
+        <h2 class="logo"> <img src="/assets/img/LOGO POLMAN BABEL.png" alt="none"> </h2>
+        <ul class="nav">
+            <li><a href="/index.html">Beranda</a></li>
+            <li><a href="/assets/pages/materi.html"> Materi </a></li>
+            <li><a href="#"> Kalkulator </a></li>
+            <li><a href="#">Soal Evaluasi</a></li>
+        </ul>
+    </div>
+
+    <!-- === KONTEN MATERI === -->
+    <div class="containeR">
+        <h1> TAUTOLOGI </h1>
+        <div class="materiA">
+            <ul>
+                <li><a href="/assets/pages/folder/computer.html">Implikasi dan aplikasinya dalam bidang komputer</a>
+                </li>
+                <li><a href="/assets/pages/folder/sub-proposisi.html">Proposisi majemuk</a></li>
+                <li><a href="/assets/pages/folder/toutologi.html">Tautologi</a></li>
+                <li><a href="/assets/pages/folder/kontradiksi.html">Kontradiksi</a></li>
+                <li><a href="/assets/pages/folder/kontingensi.html">Kontingensi</a></li>
+            </ul>
+        </div>
+        <div class="paragraf3">
+            <h4>Pengertian Tautologi</h4>
+            <p>
+                <strong>Tautologi</strong> adalah suatu pernyataan majemuk yang <strong>selalu bernilai BENAR
+                    (True)</strong> untuk setiap kemungkinan nilai kebenaran dari variabel-variabel penyusunnya. Tidak
+                peduli apakah pernyataan asalnya benar atau salah, hasil akhirnya akan selalu benar.
+            </p>
+
+            <h4>Contoh Tabel Kebenaran Tautologi:</h4>
+            <p>
+                Kita ambil contoh rumus: <strong>P &or; ~P</strong> (P atau Bukan P).
+            </p>
+
+            <table border="1" class="table3">
+                <thead>
+                    <tr>
+                        <th>P</th>
+                        <th>~P (Negasi P)</th>
+                        <th>P &or; ~P</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>T</td>
+                        <td>F</td>
+                        <td>T</td>
+                    </tr>
+                    <tr>
+                        <td>F</td>
+                        <td>T</td>
+                        <td>T</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h4>Penjelasan:</h4>
+            <ul>
+                <li>
+                    <strong>Baris Pertama:</strong> Jika <strong>P</strong> Benar, maka <strong>~P</strong> Salah.
+                    Karena menggunakan operator Disjungsi (<strong>&or;</strong> / ATAU), jika salah satu benar, maka
+                    hasilnya <strong>BENAR</strong>.
+                </li>
+                <li>
+                    <strong>Baris Kedua:</strong> Jika <strong>P</strong> Salah, maka <strong>~P</strong> Benar.
+                    Hasilnya pun tetap <strong>BENAR</strong>.
+                </li>
+            </ul>
+
+            <h4>Contoh Kalimat:</h4>
+            <div class="contoh-box">
+                <ul>
+                    <li><strong>P :</strong> Hari ini hujan.</li>
+                    <li><strong>~P :</strong> Hari ini tidak hujan.</li>
+                </ul>
+                <p>
+                    <strong>P &or; ~P :</strong> "Hari ini hujan <strong>ATAU</strong> hari ini tidak hujan."
+                    <br>
+                    <em>(Pernyataan ini pasti benar, karena tidak mungkin ada kondisi ketiga).</em>
+                </p>
+            </div>
+        </div>
+
+        <!-- === FOOTER === -->
+        <footer class="site-footer">
+            <div class="footer-bottom">
+                <p>&copy; Kelompok satu. All rights reserved.</p>
+            </div>
+        </footer>
+
+</body>
+
+</html>

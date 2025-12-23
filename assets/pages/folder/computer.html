@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IMPLIKASI - MATEMATIKA DISKRIT</title>
+
+    <link rel="stylesheet" href="/assets/style/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Molle&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yarndings+20&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <h2 class="logo">
+            <img src="/assets/img/LOGO POLMAN BABEL.png" alt="Logo Polman Babel">
+        </h2>
+        <ul class="nav">
+            <li><a href="/index.html">Beranda</a></li>
+            <li><a href="/assets/pages/materi.html"> Materi </a></li>
+            <li><a href="#"> Kalkulator </a></li>
+            <li><a href="#">Soal Evaluasi</a></li>
+        </ul>
+    </nav>
+    <div class="containeR">
+        <h1>IMPLIKASI DAN APLIKASINYA DALAM BIDANG KOMPUTER</h1>
+
+        <div class="materiA">
+            <ul>
+                <li><a href="/assets/pages/folder/computer.html" class="active">Implikasi dan aplikasinya dalam bidang
+                        komputer</a></li>
+                <li><a href="/assets/pages/folder/sub-proposisi.html">Proposisi Majemuk</a></li>
+                <li><a href="/assets/pages/folder/toutologi.html">Tautologi</a></li>
+                <li><a href="/assets/pages/folder/kontradiksi.html">Kontradiksi</a></li>
+                <li><a href="/assets/pages/folder/kontingensi.html">Kontingensi</a></li>
+            </ul>
+        </div>
+
+        <div class="paragraf1">
+
+            <h4>Implikasi dan Aplikasinya dalam Bidang Komputer</h4>
+            <p>
+                Implikasi adalah pernyataan majemuk dengan kata hubung <strong>“jika... maka...”</strong>.
+                Implikasi dari pernyataan P dan Q dinotasikan dengan <strong>“P &rArr; Q”</strong> yang dibaca “jika P
+                maka Q”.
+            </p>
+
+            <h4>Contoh:</h4>
+            <ul>
+                <li><strong>P :</strong> Harimau adalah hewan karnivora</li>
+                <li><strong>Q :</strong> Harimau bukan mamalia</li>
+            </ul>
+            <p class="contoh-hasil">
+                <strong>MAKA P &rArr; Q :</strong> Jika harimau hewan karnivora, maka harimau bukan mamalia.
+            </p>
+
+            <h4>Lihat contoh tabel kebenaran berikut:</h4>
+            <table border="1" class="table1">
+                <thead>
+                    <tr>
+                        <th scope="col">P</th>
+                        <th scope="col">Q</th>
+                        <th scope="col">P &rArr; Q</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>T</td>
+                        <td>T</td>
+                        <td>T</td>
+                    </tr>
+                    <tr>
+                        <td>T</td>
+                        <td>F</td>
+                        <td>F</td>
+                    </tr>
+                    <tr>
+                        <td>F</td>
+                        <td>T</td>
+                        <td>T</td>
+                    </tr>
+                    <tr>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>T</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p class="note">
+                <strong>CATATAN:</strong> Implikasi baru bernilai salah bila nilai dari pernyataan (Q) setelah kata
+                “maka” bernilai salah.
+            </p>
+
+            <hr style="margin: 2rem 0; border: 0.5px solid #444;">
+
+            <h4>Implikasi dalam Bahasa Pemrograman</h4>
+            <ul>
+                <li><strong>IF C THEN S</strong></li>
+                <li><strong>C:</strong> Ekspresi logika yang menyatakan syarat/kondisi.</li>
+                <li><strong>S:</strong> Satu atau lebih pernyataan.</li>
+                <li>S dieksekusi jika C <strong>BENAR</strong>.</li>
+                <li>S tidak dieksekusi jika C <strong>SALAH</strong>.</li>
+            </ul>
+
+            <p>
+                Struktur <em>if-then</em> pada bahasa pemrograman berbeda dengan implikasi <em>if-then</em> yang
+                digunakan dalam logika.
+            </p>
+            <p>
+                Pernyataan <em>if-then</em> dalam bahasa pemrograman bukan proposisi karena tidak ada korespondensi
+                antara pernyataan tersebut dengan operator implikasi (&rArr;).
+            </p>
+            <p>
+                Interpreter atau compiler tidak melakukan penilaian kebenaran pernyataan <em>if-then</em> secara logika.
+                Interpreter hanya memeriksa kebenaran kondisi <strong>C</strong>; jika C benar maka <strong>S</strong>
+                dieksekusi, sebaliknya jika C salah maka S tidak dieksekusi.
+            </p>
+
+            <h4>Contoh Kasus:</h4>
+            <p>
+                Misalkan di dalam sebuah program yang ditulis dalam Bahasa Pascal terdapat pernyataan berikut:<br>
+                <code>IF x > y THEN y := x + 10</code>. <br>
+                Berapa nilai y setelah pelaksanaan eksekusi <em>if-then</em> jika:
+            </p>
+            <ul>
+                <li>
+                    <strong>x = 2 dan y = 1</strong><br>
+                    Ekspresi <code>x > y</code> bernilai <strong>BENAR</strong>.<br>
+                    Pernyataan <code>y := x + 10</code> dilaksanakan.<br>
+                    Nilai y sekarang menjadi: <strong>y = 2 + 10 = 12</strong>.
+                </li>
+                <li style="margin-top: 10px;">
+                    <strong>x = 3 dan y = 5</strong><br>
+                    Ekspresi <code>x > y</code> bernilai <strong>SALAH</strong>.<br>
+                    Pernyataan <code>y := x + 10</code> <strong>TIDAK</strong> dilaksanakan.<br>
+                    Nilai y tetap seperti sebelumnya, yaitu <strong>5</strong>.
+                </li>
+            </ul>
+        </div>
+    </div>
+    <footer class="site-footer">
+        <div class="footer-bottom">
+            <p>&copy; Kelompok Satu. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

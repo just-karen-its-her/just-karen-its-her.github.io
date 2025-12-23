@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> OPERATOR LOGIKA </title>
+    <link rel="stylesheet" href="/assets/style/styles.css">
+</head>
+
+<body>
+
+    <!-- === NAVBAR === -->
+    <div class="navbar">
+        <h2 class="logo"> <img src="/assets/img/LOGO POLMAN BABEL.png" alt="LOGO POLMAN BABEL.png"> </h2>
+        <ul class="nav">
+            <li><a href="/index.html">Beranda</a></li>
+            <li><a href="/assets/pages/materi.html"> Materi </a></li>
+            <li><a href="/assets/pages/calculator.html"> Kalkulator </a></li>
+            <li><a href="/assets/pages/soal.html">Soal Evaluasi</a></li>
+        </ul>
+    </div>
+
+    <!-- === KONTEN MATERI === -->
+    <section class="section-card">
+        <div class="card-header">
+            <h2>Pengantar Logika</h2>
+        </div>
+        <div class="card-body">
+            <div class="poster">
+                <img src="/assets/img/PengantarLogika.png" alt="Poster Pengantar Logika">
+            </div>
+            <div class="materi">
+                <p>
+                    <b>Pengantar Logika</b> adalah salah satu cabang filsafat yang penting untuk dikaji lebih mendalam
+                    baik dalam dunia Teknik Informatika maupun Matematika.
+                </p>
+                <p>
+                    Logika dalam Kamus Besar Bahasa Indonesia (KBBI) berarti pengetahuan tentang kaidah berpikir, jalan
+                    pikiran yang masuk akal.
+                    Ketika seseorang berlogika, maka ia menggunakan penalarannya untuk memberikan kesimpulan apakah
+                    pernyataan itu valid atau tidak valid berdasarkan akal budi.
+                </p>
+
+                <div class="highlight-box">
+                    <h4>Contoh Logika (Silogisme)</h4>
+                    <p>
+                        <b>Pernyataan 1 :</b> Semua lulusan terbaik di suatu perguruan tinggi mendapat hadiah plakat
+                        pada saat kelulusan.<br>
+                        <b>Pernyataan 2 :</b> Setiap mahasiswa yang mendapat hadiah plakat dari kampus memperoleh IPK
+                        lebih dari 3.5.<br>
+                        <br>
+                        <i><b>Kesimpulan :</b> Jadi, semua lulusan terbaik di suatu perguruan tinggi memperoleh IPK
+                            lebih dari 3.5.</i>
+                    </p>
+                </div>
+
+                <h4>Penjelasan Contoh:</h4>
+                <p>
+                    Dalam konsep logika, kita tidak menghasilkan kesimpulan mengenai benar/salahnya suatu pernyataan
+                    secara fakta.
+                    Namun, jika Pernyataan 1 dan 2 dianggap benar, maka logika akan mengarahkan kita kepada
+                    kesimpulan bahwa pernyataan terakhir <b>pasti</b> bernilai benar (valid).
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-card">
+        <div class="card-header">
+            <h2>Operator Logika</h2>
+        </div>
+        <div class="card-body">
+            <div class="poster">
+                <img src="/assets/img/OperatorLogika.png" alt="Poster Operator Logika">
+            </div>
+            <div class="materi">
+                <p>
+                    <b>Operator Logika</b> digunakan untuk menggabungkan dua atau lebih pernyataan untuk menghasilkan
+                    nilai kebenaran.
+                </p>
+
+                <div class="highlight-box">
+                    <p>
+                        <b>a. Konjungsi (AND / &&)</b><br>
+                        Penarikan kesimpulan akan bernilai <b>TRUE</b> hanya apabila <b>kedua</b> (atau semua)
+                        pernyataan bernilai TRUE.
+                    </p>
+                    <p>
+                        <i>Contoh dalam pemrograman Kotlin: Misalnya p bernilai TRUE dan q bernilai TRUE, maka p && q
+                            akan bernilai TRUE.</i>
+                    </p>
+                </div>
+
+                <h4>Contoh Logika Konjungsi:</h4>
+                <ul>
+                    <li>True && True : <b>True</b></li>
+                    <li>True && False : <b>False</b></li>
+                    <li>False && True : <b>False</b></li>
+                    <li>False && False : <b>False</b></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="section-card">
+        <div class="card-header">
+            <h2>Proposisi</h2>
+        </div>
+        <div class="card-body">
+            <div class="poster">
+                <img src="/assets/img/Proporsisi.png" alt="Poster Proposisi">
+            </div>
+            <div class="materi">
+                <div class="highlight-box">
+                    <p>
+                        <b>Definisi:</b><br>
+                        "Proposisi adalah kalimat yang bernilai benar atau salah, tetapi tidak keduanya sekaligus." <br>
+                        <i>(Fahmi & Priwantoro, 2021)</i>
+                    </p>
+                </div>
+
+                <p>
+                    <b>Dalam Logika Proposisi</b>, nilai kebenaran selalu dimaknai secara jelas. Kalimat terbuka ini
+                    tidak ambigu dan hanya memiliki salah satu nilai kebenaran, yaitu salah atau benar.
+                </p>
+                <p>
+                    Proposisi ini berbeda dengan pernyataan yang sering kalian temui dalam kehidupan sehari-hari yang
+                    tidak selalu bisa ditentukan nilai kebenarannya.
+                </p>
+
+                <h4>Contoh Proposisi:</h4>
+                <ul>
+                    <li>Setelah hari Senin adalah hari Selasa : <b style="color: #2ecc71;">[BENAR]</b></li>
+                    <li>Sebuah persegi memiliki tiga buah sudut : <b style="color: #e74c3c;">[SALAH]</b></li>
+                    <li>2 + 5 = 3 : <b style="color: #e74c3c;">[SALAH]</b></li>
+                    <li>Dua merupakan salah satu bilangan genap : <b style="color: #2ecc71;">[BENAR]</b></li>
+                    <li>Nol merupakan bilangan netral (non negatif/positif) : <b style="color: #2ecc71;">[BENAR]</b>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="section-card">
+        <div class="card-header">
+            <h2>Tabel Kebenaran</h2>
+        </div>
+        <div class="card-body">
+
+            <div class="poster">
+                <img src="/assets/img/TableKebenaran.png" alt="Poster Tabel Kebenaran">
+            </div>
+
+            <div class="materi">
+                <p>
+                    <b>Tabel Kebenaran</b> adalah tabel sistematis untuk menampilkan semua kemungkinan nilai kebenaran
+                    (Benar atau Salah) dari suatu pernyataan logika atau ekspresi Boolean untuk setiap kombinasi
+                    variabelnya.
+                </p>
+                <p>
+                    Tabel ini digunakan untuk menganalisis, memverifikasi, dan membuktikan validitas pernyataan logika,
+                    terutama dalam aljabar Boolean, gerbang logika, dan penalaran logis.
+                </p>
+
+                <h4>Contoh Tabel Kebenaran Dasar:</h4>
+                <div class="grid-tables">
+
+                    <div class="table-box">
+                        <h5>Konjungsi (p ∧ q)</h5>
+                        <table class="custom-table">
+                            <thead>
+                                <tr>
+                                    <th>p</th>
+                                    <th>q</th>
+                                    <th>p ∧ q</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>T</td>
+                                    <td>T</td>
+                                    <td>T</td>
+                                </tr>
+                                <tr>
+                                    <td>T</td>
+                                    <td>F</td>
+                                    <td>F</td>
+                                </tr>
+                                <tr>
+                                    <td>F</td>
+                                    <td>T</td>
+                                    <td>F</td>
+                                </tr>
+                                <tr>
+                                    <td>F</td>
+                                    <td>F</td>
+                                    <td>F</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="table-box">
+                        <h5>Disjungsi (p ∨ q)</h5>
+                        <table class="custom-table">
+                            <thead>
+                                <tr>
+                                    <th>p</th>
+                                    <th>q</th>
+                                    <th>p ∨ q</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>T</td>
+                                    <td>T</td>
+                                    <td>T</td>
+                                </tr>
+                                <tr>
+                                    <td>T</td>
+                                    <td>F</td>
+                                    <td>T</td>
+                                </tr>
+                                <tr>
+                                    <td>F</td>
+                                    <td>T</td>
+                                    <td>T</td>
+                                </tr>
+                                <tr>
+                                    <td>F</td>
+                                    <td>F</td>
+                                    <td>F</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="table-box">
+                        <h5>Negasi (~p)</h5>
+                        <table class="custom-table">
+                            <thead>
+                                <tr>
+                                    <th>p</th>
+                                    <th>~p</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>T</td>
+                                    <td>F</td>
+                                </tr>
+                                <tr>
+                                    <td>F</td>
+                                    <td>T</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div style="margin-top: 40px;">
+                    <h4>Studi Kasus Tabel Kompleks</h4>
+                    <div class="highlight-box">
+                        <p>Pembuktian untuk ekspresi: <b>(p ∧ q) ∨ (~q ∧ r)</b></p>
+                        <p style="font-size: 0.9rem; margin-top: 5px;"><i>Komponen yang dicari: ~q, (p ∧ q), (~q ∧
+                                r)</i></p>
+                    </div>
+
+                    <div class="table-wrapper">
+                        <table class="custom-table full-width">
+                            <thead>
+                                <tr>
+                                    <th>p</th>
+                                    <th>q</th>
+                                    <th>r</th>
+                                    <th>~q</th>
+                                    <th>(p ∧ q)</th>
+                                    <th>(~q ∧ r)</th>
+                                    <th>(p ∧ q) ∨ (~q ∧ r)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>T</td>
+                                    <td>T</td>
+                                    <td>T</td>
+                                    <td>F</td>
+                                    <td>T</td>
+                                    <td>F</td>
+                                    <td><b>T</b></td>
+                                </tr>
+                                <tr>
+                                    <td>T</td>
+                                    <td>T</td>
+                                    <td>F</td>
+                                    <td>F</td>
+                                    <td>T</td>
+                                    <td>F</td>
+                                    <td><b>T</b></td>
+                                </tr>
+                                <tr>
+                                    <td>T</td>
+                                    <td>F</td>
+                                    <td>T</td>
+                                    <td>T</td>
+                                    <td>F</td>
+                                    <td>T</td>
+                                    <td><b>T</b></td>
+                                </tr>
+                                <tr>
+                                    <td>T</td>
+                                    <td>F</td>
+                                    <td>F</td>
+                                    <td>T</td>
+                                    <td>F</td>
+                                    <td>F</td>
+                                    <td><b>F</b></td>
+                                </tr>
+                                <tr>
+                                    <td>F</td>
+                                    <td>T</td>
+                                    <td>T</td>
+                                    <td>F</td>
+                                    <td>F</td>
+                                    <td>F</td>
+                                    <td><b>F</b></td>
+                                </tr>
+                                <tr>
+                                    <td>F</td>
+                                    <td>T</td>
+                                    <td>F</td>
+                                    <td>F</td>
+                                    <td>F</td>
+                                    <td>F</td>
+                                    <td><b>F</b></td>
+                                </tr>
+                                <tr>
+                                    <td>F</td>
+                                    <td>F</td>
+                                    <td>T</td>
+                                    <td>T</td>
+                                    <td>F</td>
+                                    <td>T</td>
+                                    <td><b>T</b></td>
+                                </tr>
+                                <tr>
+                                    <td>F</td>
+                                    <td>F</td>
+                                    <td>F</td>
+                                    <td>T</td>
+                                    <td>F</td>
+                                    <td>F</td>
+                                    <td><b>F</b></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- === FOOTER === -->
+    <footer class="site-footer">
+        <div class="footer-bottom">
+            <p>&copy; Kelompok satu. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
