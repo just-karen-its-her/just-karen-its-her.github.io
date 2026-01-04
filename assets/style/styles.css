@@ -1,12 +1,10 @@
 /* =========================================
-1. IMPORT FONTS & GLOBAL RESET
+   1. IMPORT FONTS & GLOBAL RESET
    ========================================= */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
 :root {
     --primary: #ffb200;
-    /* KUNING ORIGINAL */
     --bg: #000000;
     --panel: #121212;
     --border: #333;
@@ -36,7 +34,7 @@ body {
 }
 
 /* =========================================
-    2. NAVBAR SECTION
+      2. NAVBAR SECTION
       ========================================= */
 .navbar {
     display: flex;
@@ -107,9 +105,8 @@ body {
     color: #000;
 }
 
-
 /* =========================================
-    3. HERO SECTION (HALAMAN UTAMA)
+      3. HERO SECTION (HALAMAN UTAMA)
       ========================================= */
 .picture-hero-index {
     background-image: linear-gradient(to bottom,
@@ -166,23 +163,23 @@ body {
     font-size: 1rem;
     cursor: pointer;
     transition: 0.3s ease-in-out;
-    text-decoration: none;
 }
 
-.btn-cta a {
-    text-decoration: none;
+.btn-cta {
+    text-decoration: none !important;
 }
 
 .hero .btn-cta:hover {
     background: #000000;
+    color: #dbba00;
+    text-decoration: none;
 }
 
 
 /* =========================================
-    4. MATERI LAYOUT (CONTAINER & SCROLL)
+      4. MATERI LAYOUT (CONTAINER & SCROLL)
       ========================================= */
 
-/* Container Utama */
 .containerr {
     width: 100%;
     margin: 0 auto;
@@ -224,9 +221,7 @@ body {
     box-sizing: border-box;
     background-color: #000;
     border: 0.1rem solid #ffffff3e;
-
     justify-content: space-evenly;
-
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
 }
@@ -324,7 +319,6 @@ body {
     border-bottom: solid 2px #444;
 }
 
-
 .containeR h1 {
     text-align: center;
     color: #FFC900;
@@ -381,7 +375,6 @@ body {
     border-radius: 12px;
     margin: 0.5rem;
 }
-
 
 .posteR:hover {
     transform: translateY(-2px);
@@ -455,10 +448,6 @@ body {
       ========================================= */
 
 /* Paragraf 1 */
-/* =========================================
-      GAYA KONTEN MATERI (PARAGRAF 1)
-      ========================================= */
-
 .paragraf1 {
     margin: 2rem auto;
     padding: 0 1rem;
@@ -478,7 +467,6 @@ body {
     display: inline-block;
 }
 
-/* Isi Paragraf */
 .paragraf1 p {
     margin-bottom: 1rem;
     text-align: justify;
@@ -487,7 +475,6 @@ body {
     color: #e0e0e0;
     text-transform: none;
 }
-
 
 .paragraf1 ul {
     list-style-position: outside;
@@ -511,10 +498,7 @@ body {
     font-style: italic;
 }
 
-/* =========================================
-      GAYA TABEL (TABLE 1)
-      ========================================= */
-
+/* Tabel 1 */
 .table1 {
     width: 100%;
     max-width: 600px;
@@ -526,7 +510,6 @@ body {
     overflow: hidden;
     border-radius: 8px;
 }
-
 
 .table1 thead th {
     background-color: #FFC900;
@@ -554,10 +537,6 @@ body {
 }
 
 /* Paragraf 2 */
-/* =========================================
-      GAYA KONTEN MATERI 2 (PROPOSISI MAJEMUK)
-      ========================================= */
-
 .paragraf2 {
     margin: 2rem 0;
     padding: 0 1rem;
@@ -594,7 +573,6 @@ body {
     text-transform: none;
 }
 
-
 .paragraf2 .note {
     background-color: #1a1a1a;
     border-left: 4px solid #FFC900;
@@ -616,10 +594,7 @@ body {
     color: #ddd;
 }
 
-/* =========================================
-      GAYA TABEL 2 (TABEL NEGASI)
-      ========================================= */
-
+/* Tabel 2 */
 .table2 {
     width: 100%;
     max-width: 600px;
@@ -653,18 +628,12 @@ body {
     background-color: #252525;
 }
 
-
 .table2 tbody tr:hover {
     background-color: #333;
     transition: 0.2s;
 }
 
-
 /* Paragraf 3 */
-/* =========================================
-    GAYA KONTEN MATERI 3 (TAUTOLOGI)
-      ========================================= */
-
 .paragraf3 {
     margin: 2rem 0;
     padding: 0 1rem;
@@ -691,13 +660,11 @@ body {
     margin-bottom: 0.8rem;
 }
 
-
 .paragraf3 ul {
     list-style-position: outside;
     padding-left: 1.5rem;
     margin-bottom: 1.5rem;
 }
-
 
 .paragraf3 .contoh-box {
     background-color: #1a1a1a;
@@ -707,10 +674,7 @@ body {
     margin-top: 10px;
 }
 
-/* =========================================
-      GAYA TABEL 3 (TAUTOLOGI)
-      ========================================= */
-
+/* Tabel 3 */
 .table3 {
     width: 100%;
     max-width: 500px;
@@ -758,12 +722,7 @@ body {
     transition: 0.2s;
 }
 
-
 /* Paragraf 4 */
-/* =========================================
-   GAYA KONTEN MATERI 4 (KONTRADIKSI)
-      ========================================= */
-
 .paragraf4 {
     margin: 2rem 0;
     padding: 0 1rem;
@@ -781,7 +740,6 @@ body {
     display: inline-block;
     padding-bottom: 5px;
 }
-
 
 .paragraf4 p,
 .paragraf4 li {
@@ -807,10 +765,7 @@ body {
     margin-top: 10px;
 }
 
-/* =========================================
-      GAYA TABEL 4 (KONTRADIKSI)
-      ========================================= */
-
+/* Tabel 4 */
 .table4 {
     width: 100%;
     max-width: 500px;
@@ -855,10 +810,6 @@ body {
 }
 
 /* Paragraf 5 */
-/* =========================================
-      GAYA KONTEN MATERI 5 (KONTINGENSI)
-      ========================================= */
-
 .paragraf5 {
     margin: 2rem 0;
     padding: 0 1rem;
@@ -902,10 +853,7 @@ body {
     margin-top: 1rem;
 }
 
-/* =========================================
-      GAYA TABEL 5 (KONTINGENSI)
-      ========================================= */
-
+/* Tabel 5 */
 .table5 {
     width: 100%;
     max-width: 650px;
@@ -921,7 +869,6 @@ body {
 .table5 thead th {
     background-color: #FFC900;
     color: #000;
-    /* Teks Hitam */
     font-weight: 800;
     text-transform: uppercase;
     padding: 15px;
@@ -955,11 +902,9 @@ body {
     transition: 0.2s;
 }
 
-/* end */
-
 
 /* =========================================
-        8. MISC (Strong & Additional Content)
+      8. MISC (Strong & Additional Content)
       ========================================= */
 strong {
     text-transform: uppercase;
@@ -971,7 +916,7 @@ strong {
 
 
 /* =========================================
-        9. ANGGOTA TEAM SECTION
+      9. ANGGOTA TEAM SECTION
       ========================================= */
 .anggota {
     display: grid;
@@ -981,21 +926,9 @@ strong {
     padding-top: 2rem;
 }
 
-@media (max-width: 900px) {
-    .anggota {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 600px) {
-    .anggota {
-        grid-template-columns: 1fr;
-    }
-}
-
 
 /* =========================================
-        10. ANIMATIONS
+      10. ANIMATIONS
       ========================================= */
 @keyframes slideUp {
     from {
@@ -1020,7 +953,7 @@ strong {
 }
 
 /* =========================================
-        11. FOOTER SECTION
+      11. FOOTER SECTION
       ========================================= */
 .site-footer {
     background-color: #000;
@@ -1040,9 +973,8 @@ strong {
 
 
 /* =========================================
-        STYLE KHUSUS ANGGOTA KELOMPOK
+      STYLE KHUSUS ANGGOTA KELOMPOK
       ========================================= */
-
 
 .container-anggota {
     max-width: 1200px;
@@ -1114,9 +1046,10 @@ strong {
 
 .info strong {
     color: #FFB200;
+    text-decoration: none;
 }
 
-/* 7. Deskripsi */
+/* Deskripsi */
 .deskripsi {
     margin-top: 1.5rem;
     padding-top: 1rem;
@@ -1139,7 +1072,7 @@ strong {
     }
 }
 
-/* --- 2. CONTAINER KARTU UTAMA --- */
+/* --- CONTAINER KARTU UTAMA --- */
 .section-card {
     width: 100%;
     max-width: 1600px;
@@ -1152,7 +1085,7 @@ strong {
     animation: fadeIn 1s ease forwards;
 }
 
-/* --- 3. JUDUL KARTU --- */
+/* --- JUDUL KARTU --- */
 .card-header h2 {
     background-color: #1c2229;
     text-align: center;
@@ -1172,7 +1105,7 @@ strong {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-/* --- 4. LAYOUT BADAN KARTU (Flexbox) --- */
+/* --- LAYOUT BADAN KARTU (Flexbox) --- */
 .card-body {
     display: flex;
     align-items: flex-start;
@@ -1180,7 +1113,7 @@ strong {
     gap: 40px;
 }
 
-/* --- 5. GAMBAR POSTER --- */
+/* --- GAMBAR POSTER --- */
 .poster {
     flex: 1 1 350px;
     display: flex;
@@ -1201,7 +1134,7 @@ strong {
     transform: scale(1.03);
 }
 
-/* --- 6. TEKS MATERI --- */
+/* --- TEKS MATERI --- */
 .materi {
     flex: 2 1 500px;
     line-height: 1.9;
@@ -1209,7 +1142,6 @@ strong {
     color: #ddd;
     text-align: justify;
 }
-
 
 .materi b,
 .materi strong {
@@ -1250,7 +1182,6 @@ strong {
 }
 
 /* --- TABLE STYLING --- */
-
 .table-wrapper {
     overflow-x: auto;
     margin-top: 15px;
@@ -1305,7 +1236,6 @@ strong {
 
 
 /* video */
-
 .video-wrapper {
     width: 100%;
     max-width: 700px;
@@ -1350,7 +1280,6 @@ strong {
     margin-bottom: 25px;
     border: 1px solid #333;
     border-left: 5px solid #777;
-    /* Default border abu-abu */
     transition: all 0.3s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
@@ -1396,14 +1325,12 @@ strong {
 
 .pilihan-ganda input[type="radio"] {
     accent-color: #FFC900;
-    /* Warna radio button jadi kuning */
     width: 18px;
     height: 18px;
     cursor: pointer;
 }
 
 /* --- FEEDBACK (BENAR / SALAH) --- */
-
 .soal-card.benar {
     border-left-color: #2ecc71;
     background-color: rgba(46, 204, 113, 0.1);
@@ -1490,16 +1417,12 @@ strong {
     background-color: #fff;
     color: #000;
     transform: translateY(-3px);
-    /* Tombol naik sedikit */
     box-shadow: 0 8px 20px rgba(255, 178, 0, 0.5);
-    /* Bayangan/Glow kuning membesar */
 }
 
 .btn-ctaa:active {
     transform: scale(0.95);
-    /* Tombol mengecil sedikit seolah ditekan */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    /* Bayangan menipis */
 }
 
 .btn-ctaa:focus {
@@ -1507,145 +1430,10 @@ strong {
     border: 2px solid #fff;
 }
 
-/* =========================================
-    12. TAMBAHAN RESPONSIVE (MEDIA QUERIES)
-      ========================================= */
-
-/* --- Tampilan untuk Tablet (max-width: 992px) --- */
-@media (max-width: 992px) {
-
-    .navbar {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .nav {
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    .section-card {
-        padding: 40px;
-        margin: 40px auto;
-        width: 95%;
-    }
-
-    .card-body,
-    .content-wrappeR {
-        flex-direction: column;
-        align-items: center;
-        gap: 30px;
-    }
-
-    .poster,
-    .materi,
-    .materiA {
-        width: 100%;
-        flex: auto;
-    }
-
-    .poster img {
-        max-width: 80%;
-    }
-}
-
-/* --- Tampilan untuk HP / Mobile (max-width: 600px) --- */
-@media (max-width: 600px) {
-
-    .navbar {
-        padding: 10px;
-    }
-
-    .nav li {
-        margin-right: 10px;
-        font-size: 0.85rem;
-    }
-
-    .hero h1 {
-        font-size: 1.6rem;
-    }
-
-    .hero p {
-        font-size: 0.9rem;
-        padding: 0 15px;
-    }
-
-    .section-card {
-        padding: 20px;
-        margin: 20px auto;
-    }
-
-    .card-header h2 {
-        font-size: 1.3rem;
-        padding: 10px 15px;
-        width: 100%;
-    }
-
-    .poster img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    .materi,
-    .materiA {
-        text-align: left;
-        font-size: 0.95rem;
-    }
-
-    .scroll-container {
-        padding: 2rem 1rem;
-        justify-content: flex-start;
-    }
-
-    .card {
-        width: 260px;
-        min-width: 250px;
-    }
-
-    .anggota {
-        grid-template-columns: 1fr;
-    }
-
-    .table-wrapper {
-        width: 100%;
-        overflow-x: auto;
-        display: block;
-    }
-
-    .custom-table,
-    .table1,
-    .table2,
-    .table3,
-    .table4,
-    .table5 {
-        min-width: 400px;
-        font-size: 0.8rem;
-    }
-
-    .materiA ul {
-        flex-direction: column;
-        gap: 10px;
-        text-align: center;
-    }
-
-    .soal-card {
-        padding: 15px;
-    }
-
-    .pilihan-ganda label {
-        padding: 10px;
-        font-size: 0.9rem;
-    }
-
-    #hasil-nilai h3 {
-        font-size: 1.4rem;
-    }
-}
 
 /* =========================================
-    CALCULATOR SECTION
+      CALCULATOR SECTION
       ========================================= */
-
 
 .calculator-section {
     display: flex;
@@ -1940,16 +1728,524 @@ button.reset:hover {
     margin: 0 4px;
 }
 
-@media (max-width: 900px) {
-    .btn-group {
+
+/* =========================================
+      12. RESPONSIVE / MEDIA QUERIES (FIXED)
+      ========================================= */
+
+/* --- Tampilan untuk Tablet / Laptop Kecil (max-width: 992px) --- */
+@media (max-width: 992px) {
+
+    /* Layout Navbar */
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    /* Layout Kartu & Materi */
+    .section-card {
+        padding: 40px;
+        margin: 40px auto;
+        width: 95%;
+    }
+
+    .card-body,
+    .content-wrappeR {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .poster,
+    .materi,
+    .materiA {
+        width: 100%;
+        flex: auto;
+    }
+
+    .poster img {
+        max-width: 80%;
+    }
+
+    /* Layout Grid Anggota (2 Kolom) */
+    .anggota {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .btn-group button.reset {
-        grid-column: span 2;
-    }
-
+    /* Layout Calculator (Stack Vertical) */
     .result-panel {
         grid-template-columns: 1fr;
+    }
+
+    .btn-group {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .btn-group button.reset {
+        grid-column: span 3;
+    }
+
+    .table-wrapper {
+        width: 100%;
+        overflow-x: auto;
+        display: block;
+    }
+}
+
+/* --- Tampilan untuk HP / Mobile (max-width: 600px) --- */
+@media (max-width: 600px) {
+
+    /* --- GLOBAL & NAVBAR --- */
+    .navbar {
+        padding: 10px;
+    }
+
+    .nav li {
+        margin-right: 10px;
+        font-size: 0.85rem;
+    }
+
+    /* --- HERO SECTION --- */
+    .hero h1 {
+        font-size: 1.6rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+        padding: 0 15px;
+    }
+
+    /* --- MATERI & CARDS --- */
+    .section-card {
+        padding: 20px;
+        margin: 20px auto;
+    }
+
+    .card-header h2 {
+        font-size: 1.3rem;
+        padding: 10px 15px;
+        width: 100%;
+    }
+
+    .poster img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .materi,
+    .materiA {
+        text-align: left;
+        font-size: 0.95rem;
+    }
+
+    .scroll-container {
+        padding: 2rem 1rem;
+        justify-content: flex-start;
+    }
+
+    .card {
+        width: 260px;
+        min-width: 250px;
+    }
+
+    /* --- TEAM SECTION (1 Kolom) --- */
+    .anggota {
+        grid-template-columns: 1fr;
+    }
+
+    /* --- TABEL RESPONSIVE --- */
+    .table-wrapper {
+        width: 100%;
+        overflow-x: auto;
+        display: block;
+    }
+
+    .table1 th,
+    .table1 td,
+    .table2 th,
+    .table2 td,
+    .table3 th,
+    .table3 td,
+    .table4 th,
+    .table4 td,
+    .table5 th,
+    .table5 td,
+    .custom-table th,
+    .custom-table td {
+        padding: 15px 25px !important;
+        white-space: nowrap;
+    }
+
+    /* --- LISTS & SOAL --- */
+    .materiA ul {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .soal-card {
+        padding: 15px;
+    }
+
+    .pilihan-ganda label {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    #hasil-nilai h3 {
+        font-size: 1.4rem;
+    }
+
+    /* --- CALCULATOR SPECIFIC --- */
+    .container-calculator {
+        padding: 1rem;
+    }
+
+    .btn-group {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+    }
+
+    button span.symbol {
+        font-size: 1rem;
+    }
+
+    .table-wrapper {
+        width: 100%;
+        overflow-x: auto;
+        display: block;
+    }
+}
+
+/* =========================================
+      13. SPECIFIC MEDIA QUERY: SAMSUNG S8+
+      Viewport: 360px x 740px
+      ========================================= */
+@media screen and (device-width: 360px) and (device-height: 740px) and (-webkit-device-pixel-ratio: 4),
+screen and (max-width: 360px) {
+
+    /* --- NAVBAR Adjustment --- */
+    .navbar {
+        padding: 0.5rem;
+        gap: 10px;
+    }
+
+    .logo {
+        padding-left: 0.5rem;
+    }
+
+    .logo img {
+        width: 60px;
+    }
+
+    .nav a {
+        font-size: 0.75rem;
+    }
+
+    /* --- HERO SECTION --- */
+    .hero h1 {
+        font-size: 1.4rem;
+        line-height: 1.3;
+        margin-bottom: 0.8rem;
+    }
+
+    .hero p {
+        font-size: 0.85rem;
+        line-height: 1.5;
+    }
+
+    /* --- SCROLL CONTAINER --- */
+    .scroll-container {
+        padding: 2rem 0.5rem;
+    }
+
+    .card {
+        width: 300px;
+        min-width: 280px;
+    }
+
+    .card img {
+        height: 250px;
+    }
+
+    /* --- CALCULATOR TWEAKS --- */
+    .container-calculator {
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    input {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .btn-group {
+        gap: 5px;
+    }
+
+    button {
+        padding: 10px 2px;
+        font-size: 0.8rem;
+    }
+
+    button span.symbol {
+        font-size: 1rem;
+    }
+
+    /* --- TABLES --- */
+    .table1 th,
+    .table1 td,
+    .custom-table th,
+    .custom-table td {
+        padding: 8px 10px !important;
+        font-size: 0.8rem;
+    }
+
+    /* --- TEAM MEMBER CARD --- */
+    .card-anggota {
+        padding: 1.5rem;
+        margin: 0 10px;
+    }
+
+    .card-anggota img {
+        width: 100px;
+        height: 100px;
+    }
+
+    /* --- QUIZ & FORM --- */
+    .quiz-container h3 {
+        font-size: 1.2rem;
+    }
+
+    .pilihan-ganda label {
+        padding: 8px 12px;
+        font-size: 0.85rem;
+    }
+}
+
+/* =========================================
+      14. SPECIFIC MEDIA QUERY: IPHONE SE (Gen 1, 2, 3)
+      Viewport Range: 320px - 375px
+      ========================================= */
+@media only screen and (max-width: 375px) {
+
+    /* --- GLOBAL TWEAKS --- */
+    html {
+        font-size: 14px;
+    }
+
+    .containerr {
+        padding: 10px;
+    }
+
+    /* --- NAVBAR --- */
+    .navbar {
+        padding: 0.5rem;
+    }
+
+    .logo img {
+        width: 55px;
+    }
+
+    .nav li {
+        margin-right: 8px;
+    }
+
+    /* --- HERO SECTION --- */
+    .picture-hero-index {
+        min-height: 80vh;
+    }
+
+    .hero h1 {
+        font-size: 1.3rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .hero p {
+        font-size: 0.85rem;
+        line-height: 1.4;
+    }
+
+    .hero .btn-cta {
+        padding: 10px 25px;
+        font-size: 0.9rem;
+    }
+
+    /* --- MATERI SCROLL CARDS --- */
+    .scroll-container {
+        padding: 2rem 0.5rem;
+    }
+
+    .card {
+        width: 280px;
+        min-width: 280px;
+    }
+
+    .card img {
+        height: 200px;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+    /* --- CALCULATOR (Super Compact Mode) --- */
+    .container-calculator {
+        padding: 15px 10px;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    .box {
+        padding: 1rem;
+        min-height: 100px;
+    }
+
+    .btn-group {
+        gap: 3px;
+        margin: 1rem 0;
+    }
+
+    button {
+        padding: 12px 2px;
+        font-size: 0.75rem;
+        border-radius: 6px;
+    }
+
+    /* --- TEAM MEMBERS --- */
+    .card-anggota {
+        padding: 1rem;
+    }
+
+    .card-anggota img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .nama {
+        font-size: 1.2rem;
+    }
+
+    /* --- TABEL --- */
+    .table-wrapper {
+        margin-top: 10px;
+    }
+
+    .table1 th,
+    .table1 td,
+    .custom-table th,
+    .custom-table td {
+        font-size: 0.7rem;
+        padding: 8px 5px !important;
+    }
+
+    /* --- QUIZ --- */
+    .soal-card {
+        padding: 15px 10px;
+    }
+
+    .btn-ctaa {
+        padding: 10px 25px;
+        font-size: 1rem;
+    }
+}
+
+/* =========================================
+      15. SPECIFIC MEDIA QUERY: STANDARD MODERN PHONES
+      (Samsung A Series, Xiaomi Redmi, Oppo, iPhone 11-15 Pro/Max)
+      Viewport Range: 376px - 480px
+      ========================================= */
+@media screen and (min-width: 376px) and (max-width: 480px) {
+
+    /* --- NAVBAR: LEBIH LEGA --- */
+    .navbar {
+        padding: 0.8rem 1rem;
+    }
+
+    .logo img {
+        width: 70px;
+    }
+
+    .nav a {
+        font-size: 0.85rem;
+    }
+
+    /* --- HERO: FONT LEBIH BESAR & TEGAS --- */
+    .hero h1 {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero p {
+        font-size: 0.95rem;
+        padding: 0 10px;
+    }
+
+    /* --- SCROLL CARDS: MEMANFAATKAN LEBAR LAYAR --- */
+    .scroll-container {
+        padding: 2.5rem 1rem;
+    }
+
+    .card {
+        width: 340px;
+        min-width: 320px;
+    }
+
+    .card img {
+        height: 280px;
+    }
+
+    /* --- CALCULATOR: FINGER FRIENDLY --- */
+    .container-calculator {
+        padding: 20px;
+    }
+
+    .btn-group {
+        gap: 10px;
+    }
+
+    button {
+        padding: 15px 0;
+        font-size: 0.9rem;
+    }
+
+    /* --- TEAM MEMBERS --- */
+    .anggota {
+        grid-template-columns: 1fr;
+        padding: 0 10px;
+    }
+
+    .card-anggota {
+        padding: 2rem;
+    }
+
+    /* --- MATERI & TABEL --- */
+    .materi {
+        font-size: 1rem;
+    }
+
+    .table-wrapper {
+        margin: 20px 0;
+    }
+
+    .table1 th,
+    .table1 td,
+    .custom-table th,
+    .custom-table td {
+        padding: 12px 15px !important;
+        font-size: 0.85rem;
+    }
+
+    /* --- QUIZ --- */
+    .pilihan-ganda label {
+        padding: 12px 15px;
+        font-size: 0.95rem;
     }
 }
