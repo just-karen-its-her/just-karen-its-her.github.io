@@ -1,6 +1,6 @@
 function cekJawaban() {
     let score = 0;
-    const totalSoal = 3;
+    const totalSoal = 10;
     const bobot = 100 / totalSoal;
 
     // Ambil semua elemen soal
@@ -47,4 +47,5 @@ function cekJawaban() {
 
     // Scroll otomatis ke bagian nilai
     hasilDiv.scrollIntoView({ behavior: 'smooth' });
+
 }
