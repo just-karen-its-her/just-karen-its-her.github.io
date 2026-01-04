@@ -122,6 +122,172 @@
                         </div>
                     </div>
 
+                    <div class="soal-card" id="soal4" data-jawaban="B">
+                        <div class="soal-text">
+                            <p><b>4. Diketahui pernyataan p bernilai BENAR dan q bernilai SALAH.</b></p>
+                            <p>Tentukan nilai kebenaran akhir dari ekspresi logika berikut: <b>(p ∨ q) ∧ q</b></p>
+                        </div>
+
+                        <div class="pilihan-ganda">
+                            <label><input type="radio" name="q4" value="A"> Benar (True)</label>
+                            <label><input type="radio" name="q4" value="B"> Salah (False)</label>
+                            <label><input type="radio" name="q4" value="C"> Tidak dapat ditentukan</label>
+                        </div>
+
+                        <div class="feedback"></div>
+                        <div class="pembahasan hidden">
+                            <b>Pembahasan:</b><br>
+                            Mari kita analisis secara bertahap:<br>
+                            1. Evaluasi dalam kurung <b>(p ∨ q)</b>: Karena p Benar dan disjungsi (∨) hanya membutuhkan
+                            satu nilai Benar, maka hasilnya adalah <b>Benar</b>.<br>
+                            2. Evaluasi konjungsi <b>(Hasil Langkah 1) ∧ q</b>: Kita memiliki (Benar ∧ Salah).<br>
+                            3. Dalam konjungsi (DAN), jika salah satu komponen bernilai Salah, maka hasil akhirnya
+                            adalah <b>SALAH</b>.
+                        </div>
+                    </div>
+
+                    <div class="soal-card" id="soal5" data-jawaban="A">
+                        <div class="soal-text">
+                            <p><b>5. Tentukan bentuk negasi (ingkaran) dari pernyataan implikasi berikut:</b></p>
+                            <p><i>"Jika hari ini hujan, maka jalanan menjadi licin."</i></p>
+                        </div>
+
+                        <div class="pilihan-ganda">
+                            <label><input type="radio" name="q5" value="A"> Hari ini hujan dan jalanan tidak
+                                licin</label>
+                            <label><input type="radio" name="q5" value="B"> Jika hari ini tidak hujan, maka jalanan
+                                tidak licin</label>
+                            <label><input type="radio" name="q5" value="C"> Hari ini tidak hujan atau jalanan
+                                licin</label>
+                        </div>
+
+                        <div class="feedback"></div>
+                        <div class="pembahasan hidden">
+                            <b>Pembahasan:</b><br>
+                            Berdasarkan hukum logika, negasi dari implikasi <b>¬(p → q)</b> adalah <b>p ∧ ¬q</b>.<br>
+                            Artinya, pernyataan implikasi disangkal ketika kondisi awal (sebab) terpenuhi, namun kondisi
+                            akhir (akibat) tidak terjadi.<br>
+                            Maka negasinya adalah: "Hari ini hujan (p terjadi) <b>DAN</b> jalanan <b>TIDAK</b> licin (q
+                            tidak terjadi)."
+                        </div>
+                    </div>
+
+                    <div class="soal-card" id="soal6" data-jawaban="B">
+                        <div class="soal-text">
+                            <p><b>6. Tentukan nilai kebenaran dari pernyataan bi-implikasi berikut:</b></p>
+                            <p><i>"5 adalah bilangan ganjil jika dan hanya jika 2 + 2 = 5"</i></p>
+                        </div>
+
+                        <div class="pilihan-ganda">
+                            <label><input type="radio" name="q6" value="A"> Benar (True)</label>
+                            <label><input type="radio" name="q6" value="B"> Salah (False)</label>
+                            <label><input type="radio" name="q6" value="C"> Ragu-ragu</label>
+                        </div>
+
+                        <div class="feedback"></div>
+                        <div class="pembahasan hidden">
+                            <b>Pembahasan:</b><br>
+                            Bi-implikasi (p ↔ q) bernilai Benar apabila kedua pernyataan memiliki nilai kebenaran yang
+                            sama.<br>
+                            Analisis pernyataan:<br>
+                            - p: "5 adalah bilangan ganjil" bernilai <b>BENAR</b>.<br>
+                            - q: "2 + 2 = 5" bernilai <b>SALAH</b>.<br>
+                            Karena nilai kebenarannya berbeda (Benar ↔ Salah), maka bi-implikasi tersebut bernilai
+                            <b>SALAH</b>.
+                        </div>
+                    </div>
+
+                    <div class="soal-card" id="soal7" data-jawaban="C">
+                        <div class="soal-text">
+                            <p><b>7. Pernyataan implikasi "Jika rajin belajar, maka akan pandai" secara logika ekuivalen
+                                    (setara) dengan...</b></p>
+                        </div>
+
+                        <div class="pilihan-ganda">
+                            <label><input type="radio" name="q7" value="A"> Rajin belajar dan tidak pandai</label>
+                            <label><input type="radio" name="q7" value="B"> Jika tidak rajin belajar, maka tidak
+                                pandai</label>
+                            <label><input type="radio" name="q7" value="C"> Tidak rajin belajar atau pandai</label>
+                        </div>
+
+                        <div class="feedback"></div>
+                        <div class="pembahasan hidden">
+                            <b>Pembahasan:</b><br>
+                            Hukum ekuivalensi implikasi menyatakan bahwa <b>p → q ≡ ¬p ∨ q</b>.<br>
+                            Ini berarti implikasi dapat diubah menjadi bentuk disjungsi dengan menegasikan hipotesis
+                            awal.<br>
+                            Jadi, bentuk setaranya adalah: "<b>TIDAK</b> rajin belajar (¬p) <b>ATAU</b> pandai (q)".
+                        </div>
+                    </div>
+
+                    <div class="soal-card" id="soal8" data-jawaban="A">
+                        <div class="soal-text">
+                            <p><b>8. Tentukan bentuk Konvers dari pernyataan implikasi "Jika p maka q"...</b></p>
+                        </div>
+
+                        <div class="pilihan-ganda">
+                            <label><input type="radio" name="q8" value="A"> Jika q maka p</label>
+                            <label><input type="radio" name="q8" value="B"> Jika tidak p maka tidak q</label>
+                            <label><input type="radio" name="q8" value="C"> Jika tidak q maka tidak p</label>
+                        </div>
+
+                        <div class="feedback"></div>
+                        <div class="pembahasan hidden">
+                            <b>Pembahasan:</b><br>
+                            Dalam logika matematika, terdapat tiga pengembangan implikasi:<br>
+                            1. <b>Konvers</b>: Menukar posisi hipotesis dan konklusi (q → p).<br>
+                            2. <b>Invers</b>: Menegasikan kedua pernyataan tanpa menukar posisi (¬p → ¬q).<br>
+                            3. <b>Kontraposisi</b>: Menukar posisi dan menegasikan keduanya (¬q → ¬p).<br>
+                            Oleh karena itu, jawaban yang tepat untuk Konvers adalah <b>Jika q maka p</b>.
+                        </div>
+                    </div>
+
+                    <div class="soal-card" id="soal9" data-jawaban="A">
+                        <div class="soal-text">
+                            <p><b>9. Manakah pernyataan berikut yang merupakan Tautologi?</b></p>
+                        </div>
+
+                        <div class="pilihan-ganda">
+                            <label><input type="radio" name="q9" value="A"> p ∨ ¬p</label>
+                            <label><input type="radio" name="q9" value="B"> p ∧ ¬p</label>
+                            <label><input type="radio" name="q9" value="C"> p → ¬p</label>
+                        </div>
+
+                        <div class="feedback"></div>
+                        <div class="pembahasan hidden">
+                            <b>Pembahasan:</b><br>
+                            <b>Tautologi</b> adalah pernyataan majemuk yang selalu bernilai Benar untuk semua
+                            kemungkinan nilai kebenarannya.<br>
+                            Pilihan A (p ∨ ¬p) menyatakan "p ATAU bukan p". Hukum ini disebut <i>Law of Excluded
+                                Middle</i>, di mana salah satu kondisi pasti benar. Contoh: "Hari ini hujan atau tidak
+                            hujan" (Pasti Benar).<br>
+                            Pilihan B adalah Kontradiksi, dan Pilihan C adalah Kontingensi.
+                        </div>
+                    </div>
+
+                    <div class="soal-card" id="soal10" data-jawaban="B">
+                        <div class="soal-text">
+                            <p><b>10. Dalam tabel kebenaran, sebuah pernyataan Implikasi (p → q) hanya akan bernilai
+                                    SALAH apabila...</b></p>
+                        </div>
+
+                        <div class="pilihan-ganda">
+                            <label><input type="radio" name="q10" value="A"> p Benar dan q Benar</label>
+                            <label><input type="radio" name="q10" value="B"> p Benar dan q Salah</label>
+                            <label><input type="radio" name="q10" value="C"> p Salah dan q Benar</label>
+                        </div>
+
+                        <div class="feedback"></div>
+                        <div class="pembahasan hidden">
+                            <b>Pembahasan:</b><br>
+                            Karakteristik utama operator Implikasi adalah hanya bernilai Salah pada satu kondisi
+                            spesifik, yaitu ketika <b>Hipotesis (p) bernilai Benar</b> tetapi <b>Konklusi (q) bernilai
+                                Salah</b>.<br>
+                            Pada kondisi lainnya (Benar → Benar, Salah → Benar, Salah → Salah), implikasi dianggap
+                            bernilai Benar.
+                        </div>
+                    </div>
+
                     <button type="button" class="btn-ctaa" onclick="cekJawaban()"
                         style="width: 100%; margin-top: 20px;">Kirim Jawaban & Lihat Nilai</button>
                 </form>
